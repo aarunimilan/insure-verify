@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DentalVerify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>🦷 DentalVerify</h1>
+
+            <p>
+                Insurance Verification System for Dental Practices
+            </p>
+
+        </div>
+
+
+        <!-- Verification Form -->
+        <div class="card">
+
+            <h2>Verify Insurance</h2>
+
+
+            <!-- Demo Patient Selector -->
+            <div class="form-group">
+
+                <label for="demoPatient">
+                    Demo Patient
+                </label>
+
+                <select id="demoPatient">
+
+                    <option value="">
+                        Select a demo patient
+                    </option>
+
+                    <option value="SCI-10001">
+                        John Mathew - SCI-10001
+                    </option>
+
+                    <option value="DSH-20001">
+                        Sarah Thomas - DSH-20001
+                    </option>
+
+                    <option value="HD-30001">
+                        Arjun Kumar - HD-30001
+                    </option>
+
+                    <option value="PDI-40001">
+                        Emily Joseph - PDI-40001
+                    </option>
+
+                    <option value="SCI-10002">
+                        Rahul Nair - SCI-10002
+                    </option>
+
+                    <option value="DSH-20002">
+                        Ananya Menon - DSH-20002
+                    </option>
+
+                    <option value="HD-30002">
+                        David George - HD-30002
+                    </option>
+
+                    <option value="PDI-40002">
+                        Maya Joseph - PDI-40002
+                    </option>
+
+                    <option value="SCI-10003">
+                        Adil Hassan - SCI-10003
+                    </option>
+
+                    <option value="DSH-20003">
+                        Nikhil Varma - DSH-20003
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Member ID -->
+            <div class="form-group">
+
+                <label for="memberId">
+                    Member ID
+                </label>
+
+                <input
+                    type="text"
+                    id="memberId"
+                    placeholder="Example: SCI-10001"
+                >
+
+            </div>
+
+
+            <!-- Dental Procedures -->
+            <div class="form-group">
+
+                <label>
+                    Dental Procedures
+                </label>
+
+                <div id="procedureList">
+
+                    <p class="procedure-placeholder">
+                        Select a patient first
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Verify Button -->
+            <button id="verifyButton">
+                Verify Insurance
+            </button>
+
+        </div>
+
+
+        <!-- Result Area -->
+        <div id="result"></div>
+
+
+        <!-- Report Action -->
+        <div id="reportActions"></div>
+
+
+        <!-- Verification History -->
+        <div class="card history-card">
+
+            <div class="history-header">
+
+                <div>
+
+                    <h2>📋 Verification History</h2>
+
+                    <p>
+                        Recent insurance verification records
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="clearHistoryButton"
+                    class="clear-history-button"
+                >
+                    Clear History
+                </button>
+
+            </div>
+
+
+            <div id="historyContainer">
+
+                <div class="empty-history">
+                    No verification history yet.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
